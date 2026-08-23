@@ -1,0 +1,7 @@
+# Raw footage — never committed, kept local only
+/raw/
+
+# Claude Code local tooling config — not site content
+/.claude/
+
+__pycache__/

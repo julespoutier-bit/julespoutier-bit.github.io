@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakdowns — Jules Poutier</title>
+  <meta name="description" content="Clay renders and technical breakdowns by Jules Poutier.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' fill='white' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body data-render="breakdown">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Jules Poutier — CGI</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="projects.html">Selected Projects</a>
+        <a href="breakdown.html">Breakdowns</a>
+        <a href="archive.html">Archives</a>
+        <a href="about.html">About</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="breakdownCategories"></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-contact">
+        <a href="mailto:jules.poutier@gmail.com">jules.poutier@gmail.com</a>
+        <a href="tel:+33783883975">07 83 88 39 75</a>
+        <a href="https://instagram.com/_ju.xyz_" target="_blank" rel="noopener">@_ju.xyz_</a>
+      </div>
+      <p class="footer-meta">© <span data-year></span> Jules Poutier</p>
+    </div>
+  </footer>
+
+  <div class="video-lightbox">
+    <button class="video-lightbox__close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="video-player">
+      <video class="video-player__el" playsinline></video>
+      <div class="video-player__bar">
+        <button class="video-player__play" aria-label="Play / Pause">
+          <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4 L20 12 L6 20 Z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" hidden><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        </button>
+        <div class="video-player__progress">
+          <div class="video-player__progress-fill"></div>
+          <div class="video-player__progress-handle"></div>
+        </div>
+        <span class="video-player__time">0:00 / 0:00</span>
+        <button class="video-player__mute">MUTE</button>
+        <button class="video-player__fullscreen" aria-label="Fullscreen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 9 V4 H9"/>
+            <path d="M15 4 H20 V9"/>
+            <path d="M20 15 V20 H15"/>
+            <path d="M9 20 H4 V15"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=13"></script>
+  <script src="js/render.js?v=13"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "homepageHero": "assets/hero.mp4",
+  "breakdowns": {
+    "categories": [
+      {
+        "key": "fluid-simulation",
+        "label": "Fluid Simulation",
+        "items": [
+          { "title": "01", "video": "assets/breakdowns/fluid-simulation/01.mp4" },
+          { "title": "02", "video": "assets/breakdowns/fluid-simulation/02.mp4" },
+          { "title": "03", "video": "assets/breakdowns/fluid-simulation/03.mp4" },
+          { "title": "04", "video": "assets/breakdowns/fluid-simulation/04.mp4" },
+          { "title": "05", "video": "assets/breakdowns/fluid-simulation/05.mp4" },
+          { "title": "06", "video": "assets/breakdowns/fluid-simulation/06.mp4" }
+        ]
+      },
+      {
+        "key": "geometry-nodes",
+        "label": "Geometry Nodes",
+        "items": [
+          { "title": "01", "video": "assets/breakdowns/geometry-nodes/01.mp4" },
+          { "title": "02", "video": "assets/breakdowns/geometry-nodes/02.mp4" },
+          { "title": "03", "video": "assets/breakdowns/geometry-nodes/03.mp4" },
+          { "title": "04", "video": "assets/breakdowns/geometry-nodes/04.mp4" }
+        ]
+      },
+      {
+        "key": "vfx",
+        "label": "VFX",
+        "items": []
+      }
+    ]
+  },
+  "about": {
+    "bio": "26-year-old, Paris based Designer, CGI Generalist and Houdini Artist. Sometimes exploring around about VFXs, Filmmaking and Sound design.",
+    "experience": [
+      { "year": "2024–2026", "role": "Intern, then CGI Artist", "details": "Creative studio 11h16, Paris" },
+      { "year": "2023", "role": "Master Mode Image Éditorial", "details": "École Duperré" },
+      { "year": "2022", "role": "Artistic Gap Year", "details": "Directed a short film over 6 months, then hitchhiked to Japan and back over 6 months" },
+      { "year": "2020–2022", "role": "Bachelor of Fundamental Physics (SPRINT)", "details": "Intensive program, Sorbonne Université" },
+      { "year": "2019", "role": "L1 Special Track, Physics", "details": "Université Toulouse III" },
+      { "year": "2018", "role": "CPGE Arts and Design", "details": "Lycée Rive Gauche, Toulouse" }
+    ]
+  },
+  "projects": [
+    {
+      "slug": "termites-du-silence",
+      "title": "Les termites du silence",
+      "year": "",
+      "hero": "assets/projects/termites-du-silence/hero.mp4",
+      "pinned": { "selectedProjects": true, "archives": false },
+      "blocks": [
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the apartment.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-01.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach at the fountain.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-02.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the gutter, low angle.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-03.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the rain, rooftop, wide shot.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-04.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the rain, rooftop, close shot.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-05.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the sidewalk.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-06.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the skylight.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-07.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the car mirror.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-08.mp4" } ] }
+      ]
+    },
+    {
+      "slug": "rd-science",
+      "title": "R&D Science",
+      "year": "",
+      "hero": "assets/projects/rd-science/hero.mp4",
+      "pinned": { "selectedProjects": true, "archives": false },
+      "blocks": [
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Green flower study.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-01.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Bean pod zip.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-02.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Single cell, cross-section.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-03.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Pipette droplet.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-04.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Stem cross-section.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-05.mp4" } ] }
+      ]
+    },
+    {
+      "slug": "juliette-has-a-gun",
+      "title": "Juliette Has A Gun",
+      "year": "",
+      "hero": "assets/projects/juliette-has-a-gun/hero.mp4",
+      "pinned": { "selectedProjects": true, "archives": false },
+      "blocks": [
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Bottle explosion, early version.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-01.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry rolling.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-02.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry wobble.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-03.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry explosion, street, camera A.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-04.mp4" } ] },
+        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry explosion, street, camera B.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-05.mp4" } ] }
+      ]
+    },
+    { "slug": "etude-de-matiere", "title": "Étude de matière", "year": "2022", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "spheres-en-suspension", "title": "Sphères en suspension", "year": "2022", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "interieur-mineral", "title": "Intérieur Minéral", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "vegetation-synthetique", "title": "Végétation Synthétique", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "architecture-fantome", "title": "Architecture Fantôme", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "liquide-chrome", "title": "Liquide Chromé", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "structure-modulaire", "title": "Structure Modulaire", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "portrait-abstrait", "title": "Portrait Abstrait", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
+    { "slug": "paysage-lunaire", "title": "Paysage Lunaire", "year": "2019", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] }
+  ]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Admin — Jules Poutier</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' fill='white' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/admin.css?v=1">
+</head>
+<body>
+
+  <header class="site-header is-on-light">
+    <div class="container">
+      <a href="index.html" class="logo">Jules Poutier — CGI</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="projects.html">Selected Projects</a>
+        <a href="breakdown.html">Breakdowns</a>
+        <a href="archive.html">Archives</a>
+        <a href="about.html">About</a>
+        <a href="admin.html" class="is-active">Admin</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="admin-bar">
+    <h1 class="admin-bar__title">Site Admin</h1>
+    <p class="admin-bar__warn" id="unsupportedWarn" hidden>
+      This tool needs Chrome or Edge (File System Access API) — it won't work in this browser.
+    </p>
+    <div class="admin-bar__actions">
+      <span class="admin-status" id="statusText">No folder selected.</span>
+      <button class="admin-btn" id="pickFolderBtn">Choose site folder</button>
+      <button class="admin-btn admin-btn--primary" id="saveBtn" disabled>Save</button>
+    </div>
+  </div>
+
+  <main class="admin-main" id="adminMain" hidden>
+
+    <section class="admin-section">
+      <h2>Homepage</h2>
+      <div class="field-row">
+        <label class="field-label">Hero video</label>
+        <input type="file" id="homepageHeroInput" accept="video/*">
+        <span class="file-name" id="homepageHeroName"></span>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <h2>Breakdowns</h2>
+      <div id="breakdownCategories" class="breakdown-categories"></div>
+    </section>
+
+    <section class="admin-section">
+      <h2>About</h2>
+      <div class="field-row field-row--stack">
+        <label class="field-label">Bio</label>
+        <textarea id="aboutBio" rows="3"></textarea>
+      </div>
+      <div id="experienceRows" class="experience-rows"></div>
+      <button class="admin-btn admin-btn--ghost" id="addExperienceRow">+ Add row</button>
+    </section>
+
+    <section class="admin-section">
+      <div class="admin-section__head">
+        <h2>Projects</h2>
+        <button class="admin-btn admin-btn--ghost" id="newProjectBtn">+ New project</button>
+      </div>
+      <p class="admin-hint">Drag a row to reorder — the order applies to both Selected Projects and Archives.</p>
+      <ul class="project-list" id="projectList"></ul>
+    </section>
+
+  </main>
+
+  <template id="blockTemplate">
+    <div class="block-editor">
+      <div class="block-editor__controls">
+        <label>Media
+          <select class="b-media-count">
+            <option value="0">0 — text only</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+          </select>
+        </label>
+        <label>Text
+          <select class="b-text-position">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="none">None</option>
+          </select>
+        </label>
+        <button class="admin-btn admin-btn--icon b-up" title="Move up">↑</button>
+        <button class="admin-btn admin-btn--icon b-down" title="Move down">↓</button>
+        <button class="admin-btn admin-btn--icon b-delete" title="Delete block">✕</button>
+      </div>
+      <textarea class="b-text" placeholder="Text"></textarea>
+      <div class="b-media-slots"></div>
+    </div>
+  </template>
+
+  <template id="breakdownCategoryTemplate">
+    <div class="breakdown-category">
+      <h3 class="breakdown-category__label"></h3>
+      <div class="breakdown-item-list"></div>
+      <button class="admin-btn admin-btn--ghost add-breakdown-item" type="button">+ Add clip</button>
+    </div>
+  </template>
+
+  <template id="breakdownItemTemplate">
+    <div class="breakdown-item">
+      <input type="text" class="bi-title" placeholder="Title">
+      <input type="file" class="bi-file" accept="video/*">
+      <span class="file-name bi-name"></span>
+      <button class="admin-btn admin-btn--icon bi-delete" type="button">✕</button>
+    </div>
+  </template>
+
+  <template id="mediaSlotTemplate">
+    <div class="media-slot">
+      <input type="file" class="m-file" accept="image/*,video/*">
+      <span class="m-name"></span>
+    </div>
+  </template>
+
+  <template id="projectRowTemplate">
+    <li class="project-row" draggable="true">
+      <details>
+        <summary>
+          <span class="drag-handle" aria-hidden="true">⋮⋮</span>
+          <input type="text" class="p-title" placeholder="Title">
+          <input type="text" class="p-year" placeholder="Year">
+          <label class="p-pin"><input type="checkbox" class="p-pin-selected"> Selected Projects</label>
+          <label class="p-pin"><input type="checkbox" class="p-pin-archives"> Archives</label>
+          <button class="admin-btn admin-btn--danger p-delete" type="button">Delete</button>
+        </summary>
+        <div class="project-editor">
+          <div class="field-row">
+            <label class="field-label">Hero video</label>
+            <input type="file" class="p-hero-input" accept="video/*">
+            <span class="file-name p-hero-name"></span>
+          </div>
+          <div class="block-list"></div>
+          <button class="admin-btn admin-btn--ghost add-block" type="button">+ Add block</button>
+        </div>
+      </details>
+    </li>
+  </template>
+
+  <script src="js/admin.js?v=1"></script>
+</body>
+</html>
