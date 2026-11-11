@@ -193,8 +193,12 @@ function initCardRotations() {
   });
 }
 
-/* ---------- Homepage poster cards + Breakdowns cards: play video on hover ---------- */
+/* ---------- Homepage poster cards + Breakdowns cards: play video on hover ----------
+   There is no hover on touch devices — those thumbnails are handled instead by
+   initAutoplayVideos below, which plays any video once it scrolls into view. */
 function initHoverVideos() {
+  if (window.matchMedia('(hover: none)').matches) return;
+
   document.querySelectorAll('.poster-card, .work-card--hover-play').forEach((card) => {
     const video = card.querySelector('video');
     if (!video) return;
@@ -210,9 +214,15 @@ function initHoverVideos() {
   });
 }
 
-/* ---------- Grid cards (Projects / Breakdowns / Archives): loop only while in view ---------- */
+/* ---------- Grid cards (Projects / Breakdowns / Archives): loop only while in view ----------
+   On a touch device (no hover) this also drives the hover-play cards, since
+   nothing else would ever start them — otherwise their thumbnail stays blank. */
 function initAutoplayVideos() {
-  const videos = document.querySelectorAll('.work-card:not(.work-card--hover-play) .work-card__video, .project-block__media video');
+  const noHover = window.matchMedia('(hover: none)').matches;
+  const selector = noHover
+    ? '.work-card__video, .poster-card__video, .project-block__media video'
+    : '.work-card:not(.work-card--hover-play) .work-card__video, .project-block__media video';
+  const videos = document.querySelectorAll(selector);
   if (!videos.length) return;
 
   if (!('IntersectionObserver' in window)) {

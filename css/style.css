@@ -538,11 +538,27 @@ body[data-render="home"] .hero-video {
   padding-inline: calc(100vw / 288);
 }
 
-/* Selected Projects: 3 panels, side by side, always cropped to the same
-   portrait ratio regardless of the window's own shape (never viewport-driven). */
+/* Selected Projects: 3 cinema-poster panels confined to a band exactly as
+   tall as the homepage showreel (100vw / 16:9) — never reflowing to 2 or 1
+   columns, never growing taller just because the viewport is narrow/tall.
+   Each panel keeps its own 3:4 portrait ratio; width follows from the fixed
+   band height instead of from a grid column, so on narrow screens the row
+   scrolls sideways rather than breaking the height invariant. */
+.work-grid--hero {
+  display: flex;
+  grid-template-columns: unset;
+  justify-content: center;
+  align-items: stretch;
+  height: calc(100vw * 9 / 16);
+  overflow-x: auto;
+}
+.work-grid--hero .work-card {
+  flex: 0 0 auto;
+}
 .work-grid--hero .work-card__media {
+  height: 100%;
   aspect-ratio: 3 / 4;
-  height: auto;
+  width: auto;
 }
 .work-card__media {
   position: relative;
