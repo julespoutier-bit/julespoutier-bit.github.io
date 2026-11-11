@@ -10,9 +10,13 @@ function escapeHtml(str) {
   }[c]));
 }
 
+function rotateAttr(project) {
+  return project.heroRotate ? ` data-rotate="${project.heroRotate}"` : '';
+}
+
 function posterCardHtml(project) {
   const media = project.hero
-    ? `<video class="poster-card__video" muted loop playsinline preload="metadata"><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
+    ? `<video class="poster-card__video" muted loop playsinline preload="metadata"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
     : '';
   const caption = project.title ? `<p class="poster-card__caption">${escapeHtml(project.title)}</p>` : '';
   return `<a class="poster-card" href="project.html?slug=${encodeURIComponent(project.slug)}">
@@ -21,12 +25,13 @@ function posterCardHtml(project) {
   </a>`;
 }
 
-function workCardHtml(project, { showDate = false } = {}) {
+function workCardHtml(project, { showDate = false, hoverPlay = false } = {}) {
   const media = project.hero
-    ? `<video class="work-card__video" muted loop playsinline preload="metadata"><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
+    ? `<video class="work-card__video" muted loop playsinline preload="metadata"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
     : '';
   const dateSpan = showDate && project.year ? `<span class="work-card__date">${escapeHtml(project.year)}</span>` : '';
-  return `<a class="work-card" href="project.html?slug=${encodeURIComponent(project.slug)}">
+  const cls = hoverPlay ? 'work-card work-card--hover-play' : 'work-card';
+  return `<a class="${cls}" href="project.html?slug=${encodeURIComponent(project.slug)}">
     <div class="work-card__media">${media}</div>
     <p class="work-card__caption">${escapeHtml(project.title)}${dateSpan}</p>
   </a>`;
@@ -36,7 +41,7 @@ function breakdownCardHtml(item) {
   const media = item.video
     ? `<video class="work-card__video" muted loop playsinline preload="metadata"><source src="${escapeHtml(item.video)}" type="video/mp4"></video>`
     : '';
-  return `<a class="work-card" href="#" data-lightbox-video>
+  return `<a class="work-card work-card--hover-play" href="#" data-lightbox-video>
     <div class="work-card__media">${media}</div>
     <p class="work-card__caption">${escapeHtml(item.title)}</p>
   </a>`;
@@ -45,34 +50,60 @@ function breakdownCardHtml(item) {
 function breakdownCategoryHtml(category) {
   return `<section class="section--tight">
     <span class="grid-section-label">${escapeHtml(category.label)}</span>
-    <div class="work-grid work-grid--4">${category.items.map(breakdownCardHtml).join('')}</div>
+    <div class="work-grid">${category.items.map(breakdownCardHtml).join('')}</div>
   </section>`;
 }
 
+const RATIO_CSS = { '1:1': '1 / 1', '4:3': '4 / 3', '3:4': '3 / 4', '16:9': '16 / 9', '9:16': '9 / 16' };
+
 function mediaItemHtml(item) {
   if (!item || !item.src) return '<div class="project-block__media-item"></div>';
+  // A "big" item spans the grid instead of sizing to its own ratio — skip the inline ratio.
+  const style = !item.big && RATIO_CSS[item.ratio] ? ` style="aspect-ratio:${RATIO_CSS[item.ratio]}"` : '';
+  const bigAttr = item.big ? ' data-big="1"' : '';
   if (item.type === 'image') {
-    return `<div class="project-block__media-item"><img src="${escapeHtml(item.src)}" alt=""></div>`;
+    return `<div class="project-block__media-item"${style}${bigAttr}><img src="${escapeHtml(item.src)}" alt=""></div>`;
   }
-  return `<div class="project-block__media-item" data-lightbox-video><video muted loop playsinline preload="metadata"><source src="${escapeHtml(item.src)}" type="video/mp4"></video></div>`;
+  return `<div class="project-block__media-item"${style}${bigAttr} data-lightbox-video><video muted loop playsinline preload="metadata"><source src="${escapeHtml(item.src)}" type="video/mp4"></video></div>`;
+}
+
+function mediaColHtml(count, items) {
+  items = items || [];
+  if (count === 1) return `<div class="project-block__media">${mediaItemHtml(items[0])}</div>`;
+  const hasBig = items.some((i) => i && i.big);
+  const cells = Array.from({ length: count }, (_, i) => mediaItemHtml(items[i])).join('');
+  const bigAttr = hasBig ? ' data-big-layout="1"' : '';
+  return `<div class="project-block__media"><div class="project-block__media-grid" data-count="${count}"${bigAttr}>${cells}</div></div>`;
+}
+
+/* Blocks compose their text as "Title\n\nBody" (see combineText at build time);
+   render the title as a heading and the rest as a normal paragraph. */
+function textBodyHtml(text) {
+  text = text || '';
+  const sep = text.indexOf('\n\n');
+  if (sep === -1) return `<p>${escapeHtml(text)}</p>`;
+  const title = text.slice(0, sep);
+  const body = text.slice(sep + 2);
+  return `<p class="project-block__title">${escapeHtml(title)}</p>${body ? `<p>${escapeHtml(body)}</p>` : ''}`;
 }
 
 function blockHtml(block) {
   const mediaCount = block.mediaCount || 0;
+
+  // Two independent media columns, side by side, no text.
+  if (block.textPosition === 'split') {
+    const inner = mediaColHtml(mediaCount, block.media) + mediaColHtml(block.mediaCount2 || 0, block.media2);
+    return `<div class="project-block reveal" data-media-count="${mediaCount}" data-text="split">${inner}</div>`;
+  }
+
   const textPosition = mediaCount > 0 ? (block.textPosition || 'left') : null;
+  const textWidthAttr = block.textWidth === 'narrow' ? ' data-text-width="narrow"' : '';
 
   const textHtml = (mediaCount === 0 || textPosition !== 'none')
-    ? `<div class="project-block__text"><p>${escapeHtml(block.text || '')}</p></div>`
+    ? `<div class="project-block__text"${textWidthAttr}>${textBodyHtml(block.text)}</div>`
     : '';
 
-  let mediaHtml = '';
-  if (mediaCount === 1) {
-    mediaHtml = `<div class="project-block__media">${mediaItemHtml((block.media || [])[0])}</div>`;
-  } else if (mediaCount > 1) {
-    const items = block.media || [];
-    const cells = Array.from({ length: mediaCount }, (_, i) => mediaItemHtml(items[i])).join('');
-    mediaHtml = `<div class="project-block__media"><div class="project-block__media-grid" data-count="${mediaCount}">${cells}</div></div>`;
-  }
+  const mediaHtml = mediaCount > 0 ? mediaColHtml(mediaCount, block.media) : '';
 
   const inner = mediaCount === 0
     ? textHtml
@@ -82,6 +113,31 @@ function blockHtml(block) {
 
   const dataText = mediaCount === 0 ? '' : ` data-text="${textPosition}"`;
   return `<div class="project-block reveal" data-media-count="${mediaCount}"${dataText}>${inner}</div>`;
+}
+
+/* A hero video filmed/rendered sideways: rotate it in place, measuring the
+   hero box itself so the rotated video still covers it exactly (full-bleed
+   or ratio-boxed alike), and keep it covered across resizes. */
+function applyHeroRotation(section, video, deg) {
+  if (!deg) {
+    video.classList.remove('is-rotated');
+    video.style.width = '';
+    video.style.height = '';
+    video.style.transform = '';
+    return;
+  }
+  video.classList.add('is-rotated');
+  const sync = () => {
+    const r = section.getBoundingClientRect();
+    video.style.width = `${r.height}px`;
+    video.style.height = `${r.width}px`;
+    video.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+  };
+  sync();
+  if (!section._heroRotationObserver) {
+    section._heroRotationObserver = new ResizeObserver(sync);
+    section._heroRotationObserver.observe(section);
+  }
 }
 
 function navCollectionFor(data, project) {
@@ -126,7 +182,7 @@ const RENDERERS = {
     if (!grid) return;
     grid.innerHTML = data.projects
       .filter((p) => p.pinned.archives)
-      .map((p) => workCardHtml(p, { showDate: true }))
+      .map((p) => workCardHtml(p, { showDate: true, hoverPlay: true }))
       .join('');
   },
 
@@ -159,6 +215,10 @@ const RENDERERS = {
       heroSection.innerHTML = project.hero
         ? `<video class="hero-video__el" autoplay muted loop playsinline><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
         : '';
+      heroSection.classList.toggle('has-ratio', !!RATIO_CSS[project.heroRatio]);
+      heroSection.style.aspectRatio = RATIO_CSS[project.heroRatio] || '';
+      const heroVideoEl = heroSection.querySelector('.hero-video__el');
+      if (heroVideoEl) applyHeroRotation(heroSection, heroVideoEl, project.heroRotate);
     }
 
     const navSlot = document.getElementById('projectNavSlot');

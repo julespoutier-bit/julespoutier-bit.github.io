@@ -14,6 +14,7 @@ window.initSite = function initSite() {
   initCustomCursor();
   initScrollReveal();
   initScrollPosters();
+  initCardRotations();
   initHoverVideos();
   initAutoplayVideos();
   initVideoLightbox();
@@ -169,10 +170,33 @@ function initScrollPosters() {
   requestAnimationFrame(tick);
 }
 
-/* ---------- Homepage poster cards: play video on hover ---------- */
+/* ---------- Card thumbnails: a hero filmed/rendered sideways, rotated in place ---------- */
+function initCardRotations() {
+  document.querySelectorAll('video[data-rotate]').forEach((video) => {
+    const deg = Number(video.dataset.rotate);
+    const container = video.closest('.poster-card__media, .work-card__media');
+    if (!container || !deg) return;
+    video.classList.add('is-rotated');
+    const sync = () => {
+      const r = container.getBoundingClientRect();
+      // Applying this outside any transition — a card's hover-scale transition
+      // on `transform` would otherwise animate the rotation itself into place.
+      video.style.transition = 'none';
+      video.style.width = `${r.height}px`;
+      video.style.height = `${r.width}px`;
+      video.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+      void video.offsetHeight;
+      video.style.transition = '';
+    };
+    sync();
+    new ResizeObserver(sync).observe(container);
+  });
+}
+
+/* ---------- Homepage poster cards + Breakdowns cards: play video on hover ---------- */
 function initHoverVideos() {
-  document.querySelectorAll('.poster-card').forEach((card) => {
-    const video = card.querySelector('.poster-card__video');
+  document.querySelectorAll('.poster-card, .work-card--hover-play').forEach((card) => {
+    const video = card.querySelector('video');
     if (!video) return;
 
     card.addEventListener('mouseenter', () => {
@@ -188,7 +212,7 @@ function initHoverVideos() {
 
 /* ---------- Grid cards (Projects / Breakdowns / Archives): loop only while in view ---------- */
 function initAutoplayVideos() {
-  const videos = document.querySelectorAll('.work-card__video, .project-block__media video');
+  const videos = document.querySelectorAll('.work-card:not(.work-card--hover-play) .work-card__video, .project-block__media video');
   if (!videos.length) return;
 
   if (!('IntersectionObserver' in window)) {

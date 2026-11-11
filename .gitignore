@@ -4,4 +4,7 @@
 # Claude Code local tooling config — not site content
 /.claude/
 
+# Stray local session-log folder, not site content
+/C--Users-jules-Desktop-SITE-JULES/
+
 __pycache__/

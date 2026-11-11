@@ -6,96 +6,1649 @@
         "key": "fluid-simulation",
         "label": "Fluid Simulation",
         "items": [
-          { "title": "01", "video": "assets/breakdowns/fluid-simulation/01.mp4" },
-          { "title": "02", "video": "assets/breakdowns/fluid-simulation/02.mp4" },
-          { "title": "03", "video": "assets/breakdowns/fluid-simulation/03.mp4" },
-          { "title": "04", "video": "assets/breakdowns/fluid-simulation/04.mp4" },
-          { "title": "05", "video": "assets/breakdowns/fluid-simulation/05.mp4" },
-          { "title": "06", "video": "assets/breakdowns/fluid-simulation/06.mp4" }
+          {
+            "title": "01",
+            "video": "assets/breakdowns/fluid-simulation/01.mp4"
+          },
+          {
+            "title": "02",
+            "video": "assets/breakdowns/fluid-simulation/02.mp4"
+          },
+          {
+            "title": "03",
+            "video": "assets/breakdowns/fluid-simulation/03.mp4"
+          },
+          {
+            "title": "04",
+            "video": "assets/breakdowns/fluid-simulation/04.mp4"
+          },
+          {
+            "title": "05",
+            "video": "assets/breakdowns/fluid-simulation/05.mp4"
+          },
+          {
+            "title": "06",
+            "video": "assets/breakdowns/fluid-simulation/06.mp4"
+          },
+          {
+            "title": "Montre Plongeon Clay",
+            "video": "assets/breakdowns/fluid-simulation/07.mp4"
+          }
         ]
       },
       {
         "key": "geometry-nodes",
         "label": "Geometry Nodes",
         "items": [
-          { "title": "01", "video": "assets/breakdowns/geometry-nodes/01.mp4" },
-          { "title": "02", "video": "assets/breakdowns/geometry-nodes/02.mp4" },
-          { "title": "03", "video": "assets/breakdowns/geometry-nodes/03.mp4" },
-          { "title": "04", "video": "assets/breakdowns/geometry-nodes/04.mp4" }
+          {
+            "title": "Curve To Rope",
+            "video": "assets/breakdowns/geometry-nodes/05.mp4"
+          },
+          {
+            "title": "Knitting",
+            "video": "assets/breakdowns/geometry-nodes/06.mp4"
+          },
+          {
+            "title": "Tentacle Flower Demo",
+            "video": "assets/breakdowns/geometry-nodes/07.mp4"
+          },
+          {
+            "title": "Paquerette de Tchernobyl Demo Variations",
+            "video": "assets/breakdowns/geometry-nodes/08.mp4"
+          }
         ]
       },
       {
-        "key": "vfx",
-        "label": "VFX",
-        "items": []
+        "key": "rigid-bodies-simulations",
+        "label": "Rigid Bodies Simulations",
+        "items": [
+          {
+            "title": "Iceberg Clay",
+            "video": "assets/breakdowns/rigid-bodies-simulations/01.mp4"
+          },
+          {
+            "title": "Cafard Vellux Clay",
+            "video": "assets/breakdowns/rigid-bodies-simulations/02.mp4"
+          },
+          {
+            "title": "Car Crash Clay C",
+            "video": "assets/breakdowns/rigid-bodies-simulations/03.mp4"
+          }
+        ]
+      },
+      {
+        "key": "cloth-and-tissue-simulations",
+        "label": "Cloth and Tissue Simulations",
+        "items": [
+          {
+            "title": "Cafard Naissance Clay",
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/01.mp4"
+          },
+          {
+            "title": "Cafards Parapluie Clay",
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/02.mp4"
+          },
+          {
+            "title": "Valentino Vaccum Clay",
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/03.mp4"
+          }
+        ]
+      },
+      {
+        "key": "crowd-simulations",
+        "label": "Crowd Simulations",
+        "items": [
+          {
+            "title": "Cafards Crowd Sim",
+            "video": "assets/breakdowns/crowd-simulations/01.mp4"
+          }
+        ]
       }
     ]
   },
   "about": {
     "bio": "26-year-old, Paris based Designer, CGI Generalist and Houdini Artist. Sometimes exploring around about VFXs, Filmmaking and Sound design.",
     "experience": [
-      { "year": "2024–2026", "role": "Intern, then CGI Artist", "details": "Creative studio 11h16, Paris" },
-      { "year": "2023", "role": "Master Mode Image Éditorial", "details": "École Duperré" },
-      { "year": "2022", "role": "Artistic Gap Year", "details": "Directed a short film over 6 months, then hitchhiked to Japan and back over 6 months" },
-      { "year": "2020–2022", "role": "Bachelor of Fundamental Physics (SPRINT)", "details": "Intensive program, Sorbonne Université" },
-      { "year": "2019", "role": "L1 Special Track, Physics", "details": "Université Toulouse III" },
-      { "year": "2018", "role": "CPGE Arts and Design", "details": "Lycée Rive Gauche, Toulouse" }
+      {
+        "year": "2024–2026",
+        "role": "Intern, then CGI Artist",
+        "details": "Creative studio 11h16, Paris"
+      },
+      {
+        "year": "2023",
+        "role": "Master Mode Image Éditorial",
+        "details": "École Duperré"
+      },
+      {
+        "year": "2022",
+        "role": "Artistic Gap Year",
+        "details": "Directed a short film over 6 months, then hitchhiked to Japan and back over 6 months"
+      },
+      {
+        "year": "2020–2022",
+        "role": "Bachelor of Fundamental Physics (SPRINT)",
+        "details": "Intensive program, Sorbonne Université"
+      },
+      {
+        "year": "2019",
+        "role": "L1 Special Track, Physics",
+        "details": "Université Toulouse III"
+      },
+      {
+        "year": "2018",
+        "role": "CPGE Arts and Design",
+        "details": "Lycée Rive Gauche, Toulouse"
+      }
     ]
   },
   "projects": [
     {
-      "slug": "termites-du-silence",
-      "title": "Les termites du silence",
-      "year": "",
-      "hero": "assets/projects/termites-du-silence/hero.mp4",
-      "pinned": { "selectedProjects": true, "archives": false },
-      "blocks": [
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the apartment.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-01.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach at the fountain.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-02.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the gutter, low angle.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-03.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the rain, rooftop, wide shot.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-04.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach in the rain, rooftop, close shot.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-05.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the sidewalk.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-06.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the skylight.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-07.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Roach on the car mirror.]", "media": [ { "type": "video", "src": "assets/projects/termites-du-silence/research-08.mp4" } ] }
-      ]
-    },
-    {
       "slug": "rd-science",
-      "title": "R&D Science",
+      "title": "Science",
       "year": "",
       "hero": "assets/projects/rd-science/hero.mp4",
-      "pinned": { "selectedProjects": true, "archives": false },
+      "pinned": {
+        "selectedProjects": true,
+        "archives": false
+      },
       "blocks": [
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Green flower study.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-01.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Bean pod zip.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-02.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Single cell, cross-section.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-03.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Pipette droplet.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-04.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Stem cross-section.]", "media": [ { "type": "video", "src": "assets/projects/rd-science/research-05.mp4" } ] }
-      ]
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-0-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-1-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-1-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-1-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-1-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-2-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-3-0.mp4",
+              "ratio": "3:4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-3-1.mp4",
+              "ratio": "3:4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-4-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-5-0.mp4",
+              "ratio": "4:3"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-5-1.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-6-0.mp4",
+              "ratio": "9:16"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rd-science/block-6-1.mp4",
+              "ratio": "9:16"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "coperni",
+      "title": "Coperni",
+      "year": "",
+      "hero": "assets/projects/coperni/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Coperni Shoe Printer Concept\n\nBefore having the réal shoe model, I had the idea of a printer which would print slices of the shoe and then, stack them to finish building it",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/coperni/block-1-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/coperni/still-1.jpg"
+            }
+          ],
+          "mediaCount2": 1,
+          "media2": [
+            {
+              "type": "image",
+              "src": "assets/projects/coperni/still-2.jpg"
+            }
+          ],
+          "textPosition": "split"
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "plants",
+      "title": "Plants",
+      "year": "",
+      "hero": "assets/projects/plants/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Pistils\n\nCréation of a procédural plant for a commercial project, \nMade in Geometry Nodes",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/plants/block-0-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Carnivorous Plant\n\nMaking of a procédural carnivorous plant for a vidéo clip",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/plants/block-1-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/plants/block-2-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/plants/block-3-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/plants/block-3-1.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Tentacle Flower\n\nAnother procédural flower made in Geometry Nodes",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/plants/block-4-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Breakdown\n\nRécursive rolling curves instanced on themselves",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/plants/block-5-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "une-apres-midi-bagues",
+      "title": "Une Après Midi Bagues",
+      "year": "2026",
+      "hero": "assets/projects/une-apres-midi-bagues/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "A Team Project\n\nI Organized an évent with all the 11h16 Team mates, where i invited everyone to my place to design a ring that I then produced Out of 925 Silver",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-1-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-2-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-3-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-4-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-5-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-6-0.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/une-apres-midi-bagues/block-7-0.jpg"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "wilson",
+      "title": "Wilson",
+      "year": "",
+      "hero": "assets/projects/wilson/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 3,
+          "textPosition": "left",
+          "text": "Composition variations\n\nBefore settling on the final knit, I tried a few different compositions — bubbles, three strands, a woven mesh, a racket-style lace.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-2-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-2-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-2-2.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-2-3.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Knitting the shoe\n\nOnce the pattern worked, I knitted it directly onto the shoe upper.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-3-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Sole\n\nA detail pass on the sole, knitted the same way.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-4-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-5-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Research & Tests\n\nA handful of the tests and work-in-progress along the way.",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-6-0.mp4"
+            }
+          ],
+          "mediaCount2": 1,
+          "media2": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-9-0.mp4"
+            }
+          ],
+          "textPosition": "split"
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Shoe construction test\n\nAn early pass using metaballs to block out the shoe’s volume.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-7-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-10-0.mp4"
+            }
+          ],
+          "mediaCount2": 1,
+          "media2": [
+            {
+              "type": "video",
+              "src": "assets/projects/wilson/block-10-1.mp4"
+            }
+          ],
+          "textPosition": "split"
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "hennessy",
+      "title": "Hennessy",
+      "year": "",
+      "hero": "assets/projects/hennessy/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Hennessy spiritueux chrismas vidéo, inspired by Mondrian paintings.",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Get the choice\n\nExploring the visual subtilites of these patterns through procedural itérations, chosing one itération and diving again into smaller variations, to get the best composition.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/hennessy/block-1-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/hennessy/block-2-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/hennessy/block-3-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "car-crash",
+      "title": "Car Crash",
+      "year": "2023",
+      "hero": "assets/projects/car-crash/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/car-crash/block-0-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/car-crash/block-0-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/car-crash/block-0-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/car-crash/block-0-3.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRotate": -90,
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "alpine",
+      "title": "Alpine",
+      "year": "2022",
+      "hero": "assets/projects/alpine/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/alpine/block-0-0.mp4",
+              "ratio": "4:3"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/alpine/block-0-1.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/alpine/block-1-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Alpine\n\nMaking of a séries of beauty shot as well as technichal shot for a Renault Showroom,\nEntire remaking and texturing of the car, rig and rbd system",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/alpine/block-2-0.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "powder-love",
+      "title": "Powder Love",
+      "year": "",
+      "hero": "assets/projects/powder-love/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "valentino",
+      "title": "Valentino",
+      "year": "",
+      "hero": "assets/projects/valentino/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "À serie of plumping balloon shots",
+          "media": []
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/valentino/block-2-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/valentino/block-2-1.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/valentino/deroulement.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRotate": -90,
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "kenzo",
+      "title": "Kenzo",
+      "year": "",
+      "hero": "assets/projects/kenzo/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "The morphing Drop\n\nThis organic shot is the result of a combination of 4 effects :\nThe morphing \nThe ripples \nThe twist\nAnd the rise",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/kenzo/block-1-0.mp4",
+              "ratio": "1:1"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/kenzo/block-0-0.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "mini",
+      "title": "Mini",
+      "year": "",
+      "hero": "assets/projects/mini/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Mini Mondial\n\nExploring the speed sensations while keeping the car static, and electric visual language with red bolts and thunder",
+          "media": []
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/mini/block-1-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/mini/block-1-1.jpg"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "velotric",
+      "title": "Velotric",
+      "year": "",
+      "hero": "assets/projects/velotric/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "A challenging transition shot\n\nFor this shot, I entirely remade the motor and especially the gears, to finetune their aspects. Then I had a great moment searching for the right caméra movement. I then made a smooth transition between the tracked caméra and the scène. I also added a fake foot in the scène to perfectly mimic the effect of being inside of the transparent motor.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/velotric/block-1-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "eve",
+      "title": "Eve",
+      "year": "",
+      "hero": "assets/projects/eve/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "My first ever 3D Project\n\nDuring the first French lockdown,  I was confined with my parents and my brothers, with online university lessons. The context was not very enthousiastic to learn something so my parents agreed to let us stop attending the online lessons if we all started a personnal project.\nMy big brother dicided to learn the math lessons of the firsts two years of MPSI.\nMy Little brother decided to learn How to model clay,\nAnd I started to write a script for an anime, which introduced me to Blender.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/eve/first-vfx.mp4"
+            }
+          ],
+          "textWidth": "narrow"
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "lapierre",
+      "title": "Lapierre",
+      "year": "2024",
+      "hero": "assets/projects/lapierre/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Rigging\n\nModeling the bike, then, Confection of a bike rig, including changing gears, while preserving the chain length, and adapting the wheel speed rotation",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/lapierre/block-0-0.mp4",
+              "ratio": "1:1"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "rolex",
+      "title": "Rolex",
+      "year": "",
+      "hero": "assets/projects/rolex/montre-touche-le-fond-ld.mp4",
+      "pinned": {
+        "selectedProjects": true,
+        "archives": true
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-0-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-1-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-1-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-1-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-1-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Iceberg\n\nEntire making of this shot,\nFrom référence to modeling,\nCracking test itérations,\nTo RBD upres, pyro, pop sim",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/iceberg-ld.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-2-0.mp4",
+              "ratio": "16:9"
+            }
+          ],
+          "mediaCount2": 4,
+          "media2": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-3-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-3-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-3-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-3-3.mp4"
+            }
+          ],
+          "textPosition": "split"
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-4-0.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Watch Touching Ocean Bottom",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/montre-touche-le-fond-ld.mp4",
+              "ratio": "16:9"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "A shot where I tried to instill softness into the watch impact.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/rolex/block-5-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
     },
     {
       "slug": "juliette-has-a-gun",
-      "title": "Juliette Has A Gun",
+      "title": "Juliette Has a Gun",
       "year": "",
       "hero": "assets/projects/juliette-has-a-gun/hero.mp4",
-      "pinned": { "selectedProjects": true, "archives": false },
+      "pinned": {
+        "selectedProjects": true,
+        "archives": false
+      },
       "blocks": [
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Bottle explosion, early version.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-01.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry rolling.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-02.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry wobble.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-03.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry explosion, street, camera A.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-04.mp4" } ] },
-        { "mediaCount": 1, "textPosition": "left", "text": "[Short text to come — Blackberry explosion, street, camera B.]", "media": [ { "type": "video", "src": "assets/projects/juliette-has-a-gun/research-05.mp4" } ] }
-      ]
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Perfume Flacon Exploding\n\nThis shot was very ambitious because I needed to give to the breaking à sensation of both tension, and sweetness. So I had the idea to havé this very angular glass breaking simulation, mixed with a soft liquid simulation, all of this in super slow motion.",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-1-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "A very challenging simulation\n\nThe core of the effect is a simple and easely managable and iterable rbd simulation. \nWhen an interesting composition with harmonious balances big and small fragments shows up, every pièce is fractured a second time, mostly of their borders. The final fracture is really heavy and sended to a second rbd sim where the high rés fragments are only released when the parent pièce is breaking. \nThen some really small shards are added and the fluid is simulated with the lowres rbd sim as a collider.",
+          "media": []
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-3-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Few others shots\n\nI made also some other shots starring the blueberry",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-4-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-5-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "BlueBerry exploding\n\nAnother highly challenging CG shot",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-7-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Vellum Simulation\n\nThis one was achieved thanks to a first vellum sim with constraints, with a manifold version of the blueberry, in order to give the pressure effect.\nThen I fractured each blueberry cell and resimulated them in a second vellum, guided by the first , and released with a burst force when the stitchs linking the fractured pièces of a cell are too stretched. Then, a Fluid simulation is added.",
+          "media": []
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-9-0.mp4",
+              "ratio": "4:3"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-9-1.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
     },
-    { "slug": "etude-de-matiere", "title": "Étude de matière", "year": "2022", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "spheres-en-suspension", "title": "Sphères en suspension", "year": "2022", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "interieur-mineral", "title": "Intérieur Minéral", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "vegetation-synthetique", "title": "Végétation Synthétique", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "architecture-fantome", "title": "Architecture Fantôme", "year": "2021", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "liquide-chrome", "title": "Liquide Chromé", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "structure-modulaire", "title": "Structure Modulaire", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "portrait-abstrait", "title": "Portrait Abstrait", "year": "2020", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] },
-    { "slug": "paysage-lunaire", "title": "Paysage Lunaire", "year": "2019", "hero": null, "pinned": { "selectedProjects": false, "archives": true }, "blocks": [] }
+    {
+      "slug": "termites-du-silence",
+      "title": "Les Termites du Silence",
+      "year": "",
+      "hero": "assets/projects/termites-du-silence/hero.mp4",
+      "pinned": {
+        "selectedProjects": true,
+        "archives": false
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-0-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-1-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-1-1.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Cockroaches Skeleton Approach\n\nSince I knew I Will havé the enheled a massive amount of cockroaches, I made one with separated joints to instance each part on his attributed transform, so only the skeletons had their own geometry . \nI tried then some procédural animation to make them all having an appropriate behaviour, depending on the obstacles, surrounding cockroaches, etc…",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-2-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "The First Swarm Test",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-3-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "left",
+          "text": "Switching to Houdini\n\nTo obtain specific highly physichal bahaviours, i Switchzd for some shots to Houdini.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-2.mp4"
+            },
+            null
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Shotlist\n\nReference stills I kept pinned while blocking out the shots.",
+          "media": []
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Flipbooks",
+          "media": []
+        },
+        {
+          "mediaCount": 3,
+          "textPosition": "left",
+          "text": "Umbrella test\n\nThree passes on the umbrella shot.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-2.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Crysallide break\n\nTesting a vellum break attribute.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-13-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Crowd sim flipbooks\n\nEarly tests for the cockroach crowd — transitions, ragdoll, instancing.",
+          "media": []
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-3.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-4.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-5.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-3.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-4.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-5.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "how-babies-are-made",
+      "title": "How Babies Are Made",
+      "year": "",
+      "hero": "assets/projects/how-babies-are-made/hero.mp4",
+      "pinned": {
+        "selectedProjects": false,
+        "archives": false
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Printer Concept Extension\n\nSince my concept of the slice Printer was not keeped by Coperni, I made a short unfinished personnal project of it.",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/how-babies-are-made/block-1-0.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    }
   ]
 }

@@ -361,6 +361,15 @@ h1, h2, h3, h4 {
   background: var(--color-bg);
   box-shadow: inset 0 0 0 1px var(--color-border);
 }
+.hero-video.has-ratio {
+  height: auto;
+}
+/* Homepage showreel: a fixed crop, same as Selected Projects — never driven
+   by the viewport's own shape. */
+body[data-render="home"] .hero-video {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
 .hero-video::after {
   content: '';
   position: absolute;
@@ -375,6 +384,14 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Source filmed/rendered sideways: rotated in place. Width/height/transform
+   are set in JS (js/render.js), swapped to the hero box's own measured size
+   so the rotated video still covers it exactly, ratio-boxed or full-bleed. */
+.hero-video__el.is-rotated {
+  inset: auto;
+  top: 50%;
+  left: 50%;
 }
 .hero-video__label {
   position: absolute;
@@ -493,6 +510,12 @@ h1, h2, h3, h4 {
   height: 100%;
   object-fit: cover;
 }
+.poster-card__video.is-rotated,
+.work-card__video.is-rotated {
+  inset: auto;
+  top: 50%;
+  left: 50%;
+}
 .poster-card__caption {
   margin-top: 0;
   text-align: center;
@@ -514,15 +537,12 @@ h1, h2, h3, h4 {
   row-gap: calc(0.6rem * 1.4 * 2);
   padding-inline: calc(100vw / 288);
 }
-.work-grid--4 { grid-template-columns: repeat(4, 1fr); }
 
-/* Selected Projects: 3 large panels filling the screen height, side by side */
+/* Selected Projects: 3 panels, side by side, always cropped to the same
+   portrait ratio regardless of the window's own shape (never viewport-driven). */
 .work-grid--hero .work-card__media {
-  aspect-ratio: unset;
-  height: calc(100vh - var(--nav-h));
-}
-@media (max-width: 900px) {
-  .work-grid--hero .work-card__media { height: 60vh; }
+  aspect-ratio: 3 / 4;
+  height: auto;
 }
 .work-card__media {
   position: relative;
@@ -705,15 +725,28 @@ h1, h2, h3, h4 {
 
 .project-block__media { width: 100%; }
 
-/* Media grid: 1 column for 2/3 items (stacked), 2 columns for 4/6
+/* Media grid: 1 column for 3 items (stacked), 2 columns for 2/4/6
    (rows are implicit — each item's own aspect-ratio sizes the row). */
 .project-block__media-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: calc(100vw / 288);
 }
+.project-block__media-grid[data-count="2"],
 .project-block__media-grid[data-count="4"],
 .project-block__media-grid[data-count="6"] { grid-template-columns: repeat(2, 1fr); }
+
+/* One item marked "big": it takes a wide column spanning every row, the
+   rest stack small in a narrow column beside it. */
+.project-block__media-grid[data-big-layout] {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.project-block__media-grid[data-big-layout] .project-block__media-item[data-big] {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  aspect-ratio: unset;
+}
 
 .project-block__media-item {
   position: relative;
@@ -742,8 +775,23 @@ h1, h2, h3, h4 {
   font-size: 0.9rem;
   color: var(--color-muted);
   line-height: 1.75;
-  max-width: 40ch;
+  max-width: 48ch;
 }
+.project-block__text p { white-space: pre-line; }
+.project-block__text .project-block__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+  margin-bottom: 0.6em;
+}
+/* Text-only block (no media): centered, not pinned to the left column */
+.project-block[data-media-count="0"] .project-block__text {
+  margin-inline: auto;
+  text-align: center;
+}
+/* A deliberately tall, narrow text column (e.g. beside a portrait video) */
+.project-block__text[data-text-width="narrow"] { max-width: 24ch; }
 
 @media (max-width: 760px) {
   .project-block { grid-template-columns: 1fr; }
