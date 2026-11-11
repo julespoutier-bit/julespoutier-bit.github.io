@@ -470,15 +470,18 @@ body[data-render="home"] .hero-video {
 }
 
 /* ---------- Poster bands, scroll-driven (homepage) ---------- */
+/* Same band height as the showreel/Selected Projects page (100vw * 9:16),
+   never the viewport's own height — a portrait phone screen used to make
+   these balloon to nearly the full screen height. */
 .poster-section {
   position: relative;
-  --poster-h: calc((100vh - var(--nav-h)) * 0.95);
-  --poster-w: calc(var(--poster-h) * 2 / 3);
+  --poster-h: calc(100vw * 9 / 16);
+  --poster-w: calc(var(--poster-h) * 3 / 4);
 }
 .poster-sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: flex-start;
@@ -548,15 +551,18 @@ body[data-render="home"] .hero-video {
   display: flex;
   grid-template-columns: unset;
   justify-content: center;
-  align-items: stretch;
-  height: calc(100vw * 9 / 16);
+  align-items: flex-start;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .work-grid--hero .work-card {
   flex: 0 0 auto;
 }
+/* The media box's height is the same expression repeated, not a percentage of
+   the flex item — some engines don't resolve aspect-ratio + percentage height
+   through a stretched flex child reliably, so this is computed independently. */
 .work-grid--hero .work-card__media {
-  height: 100%;
+  height: calc(100vw * 9 / 16);
   aspect-ratio: 3 / 4;
   width: auto;
 }
