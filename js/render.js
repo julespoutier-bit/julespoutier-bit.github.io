@@ -215,6 +215,7 @@ const RENDERERS = {
       heroSection.innerHTML = project.hero
         ? `<video class="hero-video__el" autoplay muted loop playsinline><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
         : '';
+      heroSection.toggleAttribute('data-lightbox-video', !!project.hero);
       heroSection.classList.toggle('has-ratio', !!RATIO_CSS[project.heroRatio]);
       heroSection.style.aspectRatio = RATIO_CSS[project.heroRatio] || '';
       const heroVideoEl = heroSection.querySelector('.hero-video__el');

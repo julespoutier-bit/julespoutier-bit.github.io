@@ -74,6 +74,10 @@ button { cursor: pointer; }
 
   --nav-h: 2.7rem;
   --ease: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Shown behind a video box until its first frame paints, instead of a flat
+     white flash — videos can take a while to load. */
+  --media-placeholder: linear-gradient(135deg, #ececec 0%, #e2e2e2 45%, #e8e8e8 70%, #ececec 100%);
 }
 
 body {
@@ -264,12 +268,25 @@ h1, h2, h3, h4 {
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 @media (max-width: 860px) {
-  .nav-toggle { display: flex; }
+  .nav-toggle {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: var(--nav-h);
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 0 0 0 16px;
+  }
   .nav-links {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    justify-self: stretch;
     height: 100vh;
     background: var(--color-bg);
     flex-direction: column;
@@ -358,7 +375,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: var(--color-bg);
+  background: var(--media-placeholder);
   box-shadow: inset 0 0 0 1px var(--color-border);
 }
 .hero-video.has-ratio {
@@ -503,7 +520,7 @@ body[data-render="home"] .hero-video {
   height: var(--poster-h);
   width: var(--poster-w);
   overflow: hidden;
-  background: var(--color-bg);
+  background: var(--media-placeholder);
   box-shadow: inset 0 0 0 1px var(--color-border);
 }
 .poster-card__video {
@@ -550,7 +567,7 @@ body[data-render="home"] .hero-video {
 .work-grid--hero {
   display: flex;
   grid-template-columns: unset;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   overflow-x: auto;
   overflow-y: hidden;
@@ -571,7 +588,7 @@ body[data-render="home"] .hero-video {
   overflow: hidden;
   margin-bottom: 0;
   aspect-ratio: 16 / 9;
-  background: var(--color-bg);
+  background: var(--media-placeholder);
   box-shadow: inset 0 0 0 1px var(--color-border);
 }
 .work-card__media .ph { height: 100%; transition: transform 0.5s var(--ease); }
@@ -775,7 +792,7 @@ body[data-render="home"] .hero-video {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--color-bg);
+  background: var(--media-placeholder);
   box-shadow: inset 0 0 0 1px var(--color-border);
 }
 .project-block__media-item video,

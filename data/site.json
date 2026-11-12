@@ -143,6 +143,511 @@
   },
   "projects": [
     {
+      "slug": "termites-du-silence",
+      "title": "Les Termites du Silence",
+      "year": "",
+      "hero": "assets/projects/termites-du-silence/hero.mp4",
+      "pinned": {
+        "selectedProjects": true,
+        "archives": false
+      },
+      "blocks": [
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-0-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-1-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-1-1.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Cockroaches Skeleton Approach\n\nSince I knew I Will havé the enheled a massive amount of cockroaches, I made one with separated joints to instance each part on his attributed transform, so only the skeletons had their own geometry . \nI tried then some procédural animation to make them all having an appropriate behaviour, depending on the obstacles, surrounding cockroaches, etc…",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-2-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "The First Swarm Test",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-3-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "left",
+          "text": "Switching to Houdini\n\nTo obtain specific highly physichal bahaviours, i Switchzd for some shots to Houdini.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-4-2.mp4"
+            },
+            null
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Shotlist\n\nReference stills I kept pinned while blocking out the shots.",
+          "media": []
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-6-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-7-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-8-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-9-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-0.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-1.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-2.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-3.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-4.jpg"
+            },
+            {
+              "type": "image",
+              "src": "assets/projects/termites-du-silence/block-10-5.jpg"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Flipbooks",
+          "media": []
+        },
+        {
+          "mediaCount": 3,
+          "textPosition": "left",
+          "text": "Umbrella test\n\nThree passes on the umbrella shot.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-12-2.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Crysallide break\n\nTesting a vellum break attribute.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-13-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Crowd sim flipbooks\n\nEarly tests for the cockroach crowd — transitions, ragdoll, instancing.",
+          "media": []
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-3.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-4.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-5.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 6,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-3.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-4.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-16-5.mp4"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
+      "slug": "juliette-has-a-gun",
+      "title": "Juliette Has a Gun",
+      "year": "",
+      "hero": "assets/projects/juliette-has-a-gun/hero.mp4",
+      "pinned": {
+        "selectedProjects": true,
+        "archives": false
+      },
+      "blocks": [
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Perfume Flacon Exploding\n\nThis shot was very ambitious because I needed to give to the breaking à sensation of both tension, and sweetness. So I had the idea to havé this very angular glass breaking simulation, mixed with a soft liquid simulation, all of this in super slow motion.",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-1-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "A very challenging simulation\n\nThe core of the effect is a simple and easely managable and iterable rbd simulation. \nWhen an interesting composition with harmonious balances big and small fragments shows up, every pièce is fractured a second time, mostly of their borders. The final fracture is really heavy and sended to a second rbd sim where the high rés fragments are only released when the parent pièce is breaking. \nThen some really small shards are added and the fluid is simulated with the lowres rbd sim as a collider.",
+          "media": []
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-2-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-3-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "Few others shots\n\nI made also some other shots starring the blueberry",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-4-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-5-0.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "BlueBerry exploding\n\nAnother highly challenging CG shot",
+          "media": []
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-7-0.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 0,
+          "textPosition": null,
+          "text": "Vellum Simulation\n\nThis one was achieved thanks to a first vellum sim with constraints, with a manifold version of the blueberry, in order to give the pressure effect.\nThen I fractured each blueberry cell and resimulated them in a second vellum, guided by the first , and released with a burst force when the stitchs linking the fractured pièces of a cell are too stretched. Then, a Fluid simulation is added.",
+          "media": []
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-0.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-8-3.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 2,
+          "textPosition": "none",
+          "text": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-9-0.mp4",
+              "ratio": "4:3"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/juliette-has-a-gun/block-9-1.mp4",
+              "ratio": "4:3"
+            }
+          ]
+        }
+      ],
+      "heroRatio": "16:9"
+    },
+    {
       "slug": "rd-science",
       "title": "Science",
       "year": "",
@@ -984,7 +1489,7 @@
       "hero": "assets/projects/rolex/montre-touche-le-fond-ld.mp4",
       "pinned": {
         "selectedProjects": true,
-        "archives": true
+        "archives": false
       },
       "blocks": [
         {
@@ -1109,511 +1614,6 @@
               "type": "video",
               "src": "assets/projects/rolex/block-5-0.mp4",
               "ratio": "4:3"
-            }
-          ]
-        }
-      ],
-      "heroRatio": "16:9"
-    },
-    {
-      "slug": "juliette-has-a-gun",
-      "title": "Juliette Has a Gun",
-      "year": "",
-      "hero": "assets/projects/juliette-has-a-gun/hero.mp4",
-      "pinned": {
-        "selectedProjects": true,
-        "archives": false
-      },
-      "blocks": [
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "Perfume Flacon Exploding\n\nThis shot was very ambitious because I needed to give to the breaking à sensation of both tension, and sweetness. So I had the idea to havé this very angular glass breaking simulation, mixed with a soft liquid simulation, all of this in super slow motion.",
-          "media": []
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-1-0.mp4",
-              "ratio": "4:3"
-            }
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "A very challenging simulation\n\nThe core of the effect is a simple and easely managable and iterable rbd simulation. \nWhen an interesting composition with harmonious balances big and small fragments shows up, every pièce is fractured a second time, mostly of their borders. The final fracture is really heavy and sended to a second rbd sim where the high rés fragments are only released when the parent pièce is breaking. \nThen some really small shards are added and the fluid is simulated with the lowres rbd sim as a collider.",
-          "media": []
-        },
-        {
-          "mediaCount": 4,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-2-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-2-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-2-2.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-2-3.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-3-0.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "left",
-          "text": "Few others shots\n\nI made also some other shots starring the blueberry",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-4-0.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-5-0.mp4",
-              "ratio": "4:3"
-            }
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "BlueBerry exploding\n\nAnother highly challenging CG shot",
-          "media": []
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-7-0.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "Vellum Simulation\n\nThis one was achieved thanks to a first vellum sim with constraints, with a manifold version of the blueberry, in order to give the pressure effect.\nThen I fractured each blueberry cell and resimulated them in a second vellum, guided by the first , and released with a burst force when the stitchs linking the fractured pièces of a cell are too stretched. Then, a Fluid simulation is added.",
-          "media": []
-        },
-        {
-          "mediaCount": 4,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-8-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-8-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-8-2.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-8-3.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 2,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-9-0.mp4",
-              "ratio": "4:3"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/juliette-has-a-gun/block-9-1.mp4",
-              "ratio": "4:3"
-            }
-          ]
-        }
-      ],
-      "heroRatio": "16:9"
-    },
-    {
-      "slug": "termites-du-silence",
-      "title": "Les Termites du Silence",
-      "year": "",
-      "hero": "assets/projects/termites-du-silence/hero.mp4",
-      "pinned": {
-        "selectedProjects": true,
-        "archives": false
-      },
-      "blocks": [
-        {
-          "mediaCount": 1,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-0-0.mp4",
-              "ratio": "4:3"
-            }
-          ]
-        },
-        {
-          "mediaCount": 2,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-1-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-1-1.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "left",
-          "text": "Cockroaches Skeleton Approach\n\nSince I knew I Will havé the enheled a massive amount of cockroaches, I made one with separated joints to instance each part on his attributed transform, so only the skeletons had their own geometry . \nI tried then some procédural animation to make them all having an appropriate behaviour, depending on the obstacles, surrounding cockroaches, etc…",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-2-0.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "left",
-          "text": "The First Swarm Test",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-3-0.mp4",
-              "ratio": "4:3"
-            }
-          ]
-        },
-        {
-          "mediaCount": 4,
-          "textPosition": "left",
-          "text": "Switching to Houdini\n\nTo obtain specific highly physichal bahaviours, i Switchzd for some shots to Houdini.",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-4-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-4-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-4-2.mp4"
-            },
-            null
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "Shotlist\n\nReference stills I kept pinned while blocking out the shots.",
-          "media": []
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-0.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-1.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-2.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-3.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-4.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-6-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-0.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-1.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-2.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-3.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-4.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-7-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-0.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-1.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-2.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-3.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-4.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-8-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-0.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-1.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-2.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-3.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-4.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-9-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-0.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-1.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-2.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-3.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-4.jpg"
-            },
-            {
-              "type": "image",
-              "src": "assets/projects/termites-du-silence/block-10-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "Flipbooks",
-          "media": []
-        },
-        {
-          "mediaCount": 3,
-          "textPosition": "left",
-          "text": "Umbrella test\n\nThree passes on the umbrella shot.",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-12-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-12-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-12-2.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 1,
-          "textPosition": "left",
-          "text": "Crysallide break\n\nTesting a vellum break attribute.",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-13-0.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 0,
-          "textPosition": null,
-          "text": "Crowd sim flipbooks\n\nEarly tests for the cockroach crowd — transitions, ragdoll, instancing.",
-          "media": []
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-2.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-3.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-4.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-5.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-2.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-3.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-4.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-5.mp4"
             }
           ]
         }
