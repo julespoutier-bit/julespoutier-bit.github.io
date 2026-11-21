@@ -209,7 +209,11 @@ function initHoverVideos() {
     });
     card.addEventListener('mouseleave', () => {
       video.pause();
-      video.currentTime = 0;
+      // Once a video has played, browsers show its paused frame instead of
+      // restoring `poster` — reloading it is the only way to bring the
+      // chosen poster image back instead of the video's raw first frame.
+      if (video.hasAttribute('poster')) video.load();
+      else video.currentTime = 0;
     });
   });
 }
@@ -264,6 +268,28 @@ function initVideoLightbox() {
   const timeEl = lightbox.querySelector('.video-player__time');
   const muteBtn = lightbox.querySelector('.video-player__mute');
   const fullscreenBtn = lightbox.querySelector('.video-player__fullscreen');
+
+  function applyPlayerRotation(deg) {
+    if (!deg) {
+      video.classList.remove('is-rotated');
+      video.style.width = '';
+      video.style.height = '';
+      video.style.transform = '';
+      return;
+    }
+    video.classList.add('is-rotated');
+    const sync = () => {
+      const r = playerEl.getBoundingClientRect();
+      video.style.width = `${r.height}px`;
+      video.style.height = `${r.width}px`;
+      video.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+    };
+    sync();
+    if (!playerEl._rotationObserver) {
+      playerEl._rotationObserver = new ResizeObserver(sync);
+      playerEl._rotationObserver.observe(playerEl);
+    }
+  }
 
   function formatTime(s) {
     if (!isFinite(s) || s < 0) return '0:00';
@@ -335,6 +361,7 @@ function initVideoLightbox() {
       video.src = src;
       video.muted = false;
       muteBtn.classList.remove('is-muted');
+      applyPlayerRotation(Number(card.dataset.rotate) || 0);
       lightbox.classList.add('is-open');
       document.body.style.overflow = 'hidden';
       video.play().catch(() => {});

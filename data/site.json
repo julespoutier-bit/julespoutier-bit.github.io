@@ -7,32 +7,39 @@
         "label": "Fluid Simulation",
         "items": [
           {
-            "title": "01",
-            "video": "assets/breakdowns/fluid-simulation/01.mp4"
+            "title": "Droplet Division",
+            "video": "assets/breakdowns/fluid-simulation/01.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/01-poster.jpg"
           },
           {
-            "title": "02",
-            "video": "assets/breakdowns/fluid-simulation/02.mp4"
+            "title": "Jets Douchette",
+            "video": "assets/breakdowns/fluid-simulation/02.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/02-poster.jpg"
           },
           {
-            "title": "03",
-            "video": "assets/breakdowns/fluid-simulation/03.mp4"
+            "title": "Lavabo Growth",
+            "video": "assets/breakdowns/fluid-simulation/03.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/03-poster.jpg"
           },
           {
-            "title": "04",
-            "video": "assets/breakdowns/fluid-simulation/04.mp4"
+            "title": "R&D YSL 01",
+            "video": "assets/breakdowns/fluid-simulation/04.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/04-poster.jpg"
           },
           {
-            "title": "05",
-            "video": "assets/breakdowns/fluid-simulation/05.mp4"
+            "title": "YSL Coulure",
+            "video": "assets/breakdowns/fluid-simulation/05.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/05-poster.jpg"
           },
           {
-            "title": "06",
-            "video": "assets/breakdowns/fluid-simulation/06.mp4"
+            "title": "YSL Recouvrement",
+            "video": "assets/breakdowns/fluid-simulation/06.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/06-poster.jpg"
           },
           {
             "title": "Montre Plongeon Clay",
-            "video": "assets/breakdowns/fluid-simulation/07.mp4"
+            "video": "assets/breakdowns/fluid-simulation/07.mp4",
+            "poster": "assets/breakdowns/fluid-simulation/07-poster.jpg"
           }
         ]
       },
@@ -42,19 +49,23 @@
         "items": [
           {
             "title": "Curve To Rope",
-            "video": "assets/breakdowns/geometry-nodes/05.mp4"
+            "video": "assets/breakdowns/geometry-nodes/05.mp4",
+            "poster": "assets/breakdowns/geometry-nodes/05-poster.jpg"
           },
           {
             "title": "Knitting",
-            "video": "assets/breakdowns/geometry-nodes/06.mp4"
+            "video": "assets/breakdowns/geometry-nodes/06.mp4",
+            "poster": "assets/breakdowns/geometry-nodes/06-poster.jpg"
           },
           {
             "title": "Tentacle Flower Demo",
-            "video": "assets/breakdowns/geometry-nodes/07.mp4"
+            "video": "assets/breakdowns/geometry-nodes/07.mp4",
+            "poster": "assets/breakdowns/geometry-nodes/07-poster.jpg"
           },
           {
             "title": "Paquerette de Tchernobyl Demo Variations",
-            "video": "assets/breakdowns/geometry-nodes/08.mp4"
+            "video": "assets/breakdowns/geometry-nodes/08.mp4",
+            "poster": "assets/breakdowns/geometry-nodes/08-poster.jpg"
           }
         ]
       },
@@ -64,15 +75,18 @@
         "items": [
           {
             "title": "Iceberg Clay",
-            "video": "assets/breakdowns/rigid-bodies-simulations/01.mp4"
+            "video": "assets/breakdowns/rigid-bodies-simulations/01.mp4",
+            "poster": "assets/breakdowns/rigid-bodies-simulations/01-poster.jpg"
           },
           {
             "title": "Cafard Vellux Clay",
-            "video": "assets/breakdowns/rigid-bodies-simulations/02.mp4"
+            "video": "assets/breakdowns/rigid-bodies-simulations/02.mp4",
+            "poster": "assets/breakdowns/rigid-bodies-simulations/02-poster.jpg"
           },
           {
             "title": "Car Crash Clay C",
-            "video": "assets/breakdowns/rigid-bodies-simulations/03.mp4"
+            "video": "assets/breakdowns/rigid-bodies-simulations/03.mp4",
+            "poster": "assets/breakdowns/rigid-bodies-simulations/03-poster.jpg"
           }
         ]
       },
@@ -82,15 +96,18 @@
         "items": [
           {
             "title": "Cafard Naissance Clay",
-            "video": "assets/breakdowns/cloth-and-tissue-simulations/01.mp4"
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/01.mp4",
+            "poster": "assets/breakdowns/cloth-and-tissue-simulations/01-poster.jpg"
           },
           {
             "title": "Cafards Parapluie Clay",
-            "video": "assets/breakdowns/cloth-and-tissue-simulations/02.mp4"
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/02.mp4",
+            "poster": "assets/breakdowns/cloth-and-tissue-simulations/02-poster.jpg"
           },
           {
             "title": "Valentino Vaccum Clay",
-            "video": "assets/breakdowns/cloth-and-tissue-simulations/03.mp4"
+            "video": "assets/breakdowns/cloth-and-tissue-simulations/03.mp4",
+            "poster": "assets/breakdowns/cloth-and-tissue-simulations/03-poster.jpg"
           }
         ]
       },
@@ -100,7 +117,8 @@
         "items": [
           {
             "title": "Cafards Crowd Sim",
-            "video": "assets/breakdowns/crowd-simulations/01.mp4"
+            "video": "assets/breakdowns/crowd-simulations/01.mp4",
+            "poster": "assets/breakdowns/crowd-simulations/01-poster.jpg"
           }
         ]
       }
@@ -147,6 +165,7 @@
       "title": "Les Termites du Silence",
       "year": "",
       "hero": "assets/projects/termites-du-silence/hero.mp4",
+      "poster": "assets/projects/termites-du-silence/poster.jpg",
       "pinned": {
         "selectedProjects": true,
         "archives": false
@@ -229,7 +248,7 @@
           "media": []
         },
         {
-          "mediaCount": 6,
+          "mediaCount": 30,
           "textPosition": "none",
           "text": "",
           "media": [
@@ -256,14 +275,7 @@
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-6-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
+            },
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-7-0.jpg"
@@ -287,14 +299,7 @@
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-7-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
+            },
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-8-0.jpg"
@@ -318,14 +323,7 @@
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-8-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
+            },
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-9-0.jpg"
@@ -349,14 +347,7 @@
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-9-5.jpg"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
+            },
             {
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-10-0.jpg"
@@ -381,7 +372,8 @@
               "type": "image",
               "src": "assets/projects/termites-du-silence/block-10-5.jpg"
             }
-          ]
+          ],
+          "mediaColumns": 4
         },
         {
           "mediaCount": 0,
@@ -390,18 +382,10 @@
           "media": []
         },
         {
-          "mediaCount": 3,
+          "mediaCount": 1,
           "textPosition": "left",
-          "text": "Umbrella test\n\nThree passes on the umbrella shot.",
+          "text": "Umbrella test\n\nFinal pass on the umbrella shot.",
           "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-12-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-12-1.mp4"
-            },
             {
               "type": "video",
               "src": "assets/projects/termites-du-silence/block-12-2.mp4"
@@ -426,40 +410,9 @@
           "media": []
         },
         {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
-          "media": [
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-0.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-1.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-2.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-3.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-4.mp4"
-            },
-            {
-              "type": "video",
-              "src": "assets/projects/termites-du-silence/block-15-5.mp4"
-            }
-          ]
-        },
-        {
-          "mediaCount": 6,
-          "textPosition": "none",
-          "text": "",
+          "mediaCount": 4,
+          "textPosition": "right",
+          "text": "Ragdoll\n\nTransitioning the crowd into ragdoll physics.",
           "media": [
             {
               "type": "video",
@@ -471,19 +424,45 @@
             },
             {
               "type": "video",
-              "src": "assets/projects/termites-du-silence/block-16-2.mp4"
-            },
-            {
-              "type": "video",
               "src": "assets/projects/termites-du-silence/block-16-3.mp4"
             },
             {
               "type": "video",
               "src": "assets/projects/termites-du-silence/block-16-4.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 4,
+          "textPosition": "right",
+          "text": "Crowd transitions\n\nEarly tests for the cockroaches switching state and reacting to obstacles.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-1.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-2.mp4"
+            },
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-0.mp4"
             },
             {
               "type": "video",
               "src": "assets/projects/termites-du-silence/block-16-5.mp4"
+            }
+          ]
+        },
+        {
+          "mediaCount": 1,
+          "textPosition": "left",
+          "text": "On car\n\nCockroaches reacting to a car passing by.",
+          "media": [
+            {
+              "type": "video",
+              "src": "assets/projects/termites-du-silence/block-15-3.mp4"
             }
           ]
         }
@@ -495,6 +474,7 @@
       "title": "Juliette Has a Gun",
       "year": "",
       "hero": "assets/projects/juliette-has-a-gun/hero.mp4",
+      "poster": "assets/projects/juliette-has-a-gun/poster.jpg",
       "pinned": {
         "selectedProjects": true,
         "archives": false
@@ -652,6 +632,7 @@
       "title": "Science",
       "year": "",
       "hero": "assets/projects/rd-science/hero.mp4",
+      "poster": "assets/projects/rd-science/poster.jpg",
       "pinned": {
         "selectedProjects": true,
         "archives": false
@@ -775,6 +756,7 @@
       "title": "Coperni",
       "year": "",
       "hero": "assets/projects/coperni/hero.mp4",
+      "poster": "assets/projects/coperni/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -822,6 +804,7 @@
       "title": "Plants",
       "year": "",
       "hero": "assets/projects/plants/hero.mp4",
+      "poster": "assets/projects/plants/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -915,6 +898,7 @@
       "title": "Une Après Midi Bagues",
       "year": "2026",
       "hero": "assets/projects/une-apres-midi-bagues/hero.mp4",
+      "poster": "assets/projects/une-apres-midi-bagues/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1011,6 +995,7 @@
       "title": "Wilson",
       "year": "",
       "hero": "assets/projects/wilson/hero.mp4",
+      "poster": "assets/projects/wilson/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1139,6 +1124,7 @@
       "title": "Hennessy",
       "year": "",
       "hero": "assets/projects/hennessy/hero.mp4",
+      "poster": "assets/projects/hennessy/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1194,6 +1180,7 @@
       "title": "Car Crash",
       "year": "2023",
       "hero": "assets/projects/car-crash/hero.mp4",
+      "poster": "assets/projects/car-crash/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1231,6 +1218,7 @@
       "title": "Alpine",
       "year": "2022",
       "hero": "assets/projects/alpine/hero.mp4",
+      "poster": "assets/projects/alpine/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1284,6 +1272,7 @@
       "title": "Powder Love",
       "year": "",
       "hero": "assets/projects/powder-love/hero.mp4",
+      "poster": "assets/projects/powder-love/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1296,6 +1285,7 @@
       "title": "Valentino",
       "year": "",
       "hero": "assets/projects/valentino/hero.mp4",
+      "poster": "assets/projects/valentino/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1342,6 +1332,7 @@
       "title": "Kenzo",
       "year": "",
       "hero": "assets/projects/kenzo/hero.mp4",
+      "poster": "assets/projects/kenzo/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1378,6 +1369,7 @@
       "title": "Mini",
       "year": "",
       "hero": "assets/projects/mini/hero.mp4",
+      "poster": "assets/projects/mini/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1412,6 +1404,7 @@
       "title": "Velotric",
       "year": "",
       "hero": "assets/projects/velotric/hero.mp4",
+      "poster": "assets/projects/velotric/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1437,6 +1430,7 @@
       "title": "Eve",
       "year": "",
       "hero": "assets/projects/eve/hero.mp4",
+      "poster": "assets/projects/eve/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1462,6 +1456,7 @@
       "title": "Lapierre",
       "year": "2024",
       "hero": "assets/projects/lapierre/hero.mp4",
+      "poster": "assets/projects/lapierre/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": true
@@ -1487,6 +1482,7 @@
       "title": "Rolex",
       "year": "",
       "hero": "assets/projects/rolex/montre-touche-le-fond-ld.mp4",
+      "poster": "assets/projects/rolex/poster.jpg",
       "pinned": {
         "selectedProjects": true,
         "archives": false
@@ -1625,6 +1621,7 @@
       "title": "How Babies Are Made",
       "year": "",
       "hero": "assets/projects/how-babies-are-made/hero.mp4",
+      "poster": "assets/projects/how-babies-are-made/poster.jpg",
       "pinned": {
         "selectedProjects": false,
         "archives": false

@@ -14,9 +14,14 @@ function rotateAttr(project) {
   return project.heroRotate ? ` data-rotate="${project.heroRotate}"` : '';
 }
 
+/* Shown as the video's own poster frame until it has one of its own — unlike
+   a CSS background, this paints reliably on mobile browsers while the video
+   is still loading. A small inline gradient, no extra request. */
+const MEDIA_POSTER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ececec'/%3E%3Cstop offset='45%25' stop-color='%23e2e2e2'/%3E%3Cstop offset='70%25' stop-color='%23e8e8e8'/%3E%3Cstop offset='100%25' stop-color='%23ececec'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23g)'/%3E%3C/svg%3E";
+
 function posterCardHtml(project) {
   const media = project.hero
-    ? `<video class="poster-card__video" muted loop playsinline preload="metadata"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
+    ? `<video class="poster-card__video" muted loop playsinline preload="metadata" poster="${escapeHtml(project.poster) || MEDIA_POSTER}"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
     : '';
   const caption = project.title ? `<p class="poster-card__caption">${escapeHtml(project.title)}</p>` : '';
   return `<a class="poster-card" href="project.html?slug=${encodeURIComponent(project.slug)}">
@@ -27,7 +32,7 @@ function posterCardHtml(project) {
 
 function workCardHtml(project, { showDate = false, hoverPlay = false } = {}) {
   const media = project.hero
-    ? `<video class="work-card__video" muted loop playsinline preload="metadata"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
+    ? `<video class="work-card__video" muted loop playsinline preload="metadata" poster="${escapeHtml(project.poster) || MEDIA_POSTER}"${rotateAttr(project)}><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
     : '';
   const dateSpan = showDate && project.year ? `<span class="work-card__date">${escapeHtml(project.year)}</span>` : '';
   const cls = hoverPlay ? 'work-card work-card--hover-play' : 'work-card';
@@ -39,7 +44,7 @@ function workCardHtml(project, { showDate = false, hoverPlay = false } = {}) {
 
 function breakdownCardHtml(item) {
   const media = item.video
-    ? `<video class="work-card__video" muted loop playsinline preload="metadata"><source src="${escapeHtml(item.video)}" type="video/mp4"></video>`
+    ? `<video class="work-card__video" muted loop playsinline preload="metadata" poster="${escapeHtml(item.poster) || MEDIA_POSTER}"><source src="${escapeHtml(item.video)}" type="video/mp4"></video>`
     : '';
   return `<a class="work-card work-card--hover-play" href="#" data-lightbox-video>
     <div class="work-card__media">${media}</div>
@@ -64,16 +69,17 @@ function mediaItemHtml(item) {
   if (item.type === 'image') {
     return `<div class="project-block__media-item"${style}${bigAttr}><img src="${escapeHtml(item.src)}" alt=""></div>`;
   }
-  return `<div class="project-block__media-item"${style}${bigAttr} data-lightbox-video><video muted loop playsinline preload="metadata"><source src="${escapeHtml(item.src)}" type="video/mp4"></video></div>`;
+  return `<div class="project-block__media-item"${style}${bigAttr} data-lightbox-video><video muted loop playsinline preload="metadata" poster="${MEDIA_POSTER}"><source src="${escapeHtml(item.src)}" type="video/mp4"></video></div>`;
 }
 
-function mediaColHtml(count, items) {
+function mediaColHtml(count, items, columns) {
   items = items || [];
   if (count === 1) return `<div class="project-block__media">${mediaItemHtml(items[0])}</div>`;
   const hasBig = items.some((i) => i && i.big);
   const cells = Array.from({ length: count }, (_, i) => mediaItemHtml(items[i])).join('');
   const bigAttr = hasBig ? ' data-big-layout="1"' : '';
-  return `<div class="project-block__media"><div class="project-block__media-grid" data-count="${count}"${bigAttr}>${cells}</div></div>`;
+  const columnsAttr = columns ? ` data-columns="${columns}"` : '';
+  return `<div class="project-block__media"><div class="project-block__media-grid" data-count="${count}"${bigAttr}${columnsAttr}>${cells}</div></div>`;
 }
 
 /* Blocks compose their text as "Title\n\nBody" (see combineText at build time);
@@ -103,7 +109,7 @@ function blockHtml(block) {
     ? `<div class="project-block__text"${textWidthAttr}>${textBodyHtml(block.text)}</div>`
     : '';
 
-  const mediaHtml = mediaCount > 0 ? mediaColHtml(mediaCount, block.media) : '';
+  const mediaHtml = mediaCount > 0 ? mediaColHtml(mediaCount, block.media, block.mediaColumns) : '';
 
   const inner = mediaCount === 0
     ? textHtml
@@ -213,9 +219,11 @@ const RENDERERS = {
     const heroSection = document.getElementById('projectHero');
     if (heroSection) {
       heroSection.innerHTML = project.hero
-        ? `<video class="hero-video__el" autoplay muted loop playsinline><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
+        ? `<video class="hero-video__el" autoplay muted loop playsinline poster="${escapeHtml(project.poster) || MEDIA_POSTER}"><source src="${escapeHtml(project.hero)}" type="video/mp4"></video>`
         : '';
       heroSection.toggleAttribute('data-lightbox-video', !!project.hero);
+      if (project.heroRotate) heroSection.setAttribute('data-rotate', project.heroRotate);
+      else heroSection.removeAttribute('data-rotate');
       heroSection.classList.toggle('has-ratio', !!RATIO_CSS[project.heroRatio]);
       heroSection.style.aspectRatio = RATIO_CSS[project.heroRatio] || '';
       const heroVideoEl = heroSection.querySelector('.hero-video__el');
