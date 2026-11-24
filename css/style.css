@@ -83,7 +83,7 @@ button { cursor: pointer; }
      small enough to see several at once on a normal screen, but bounded on
      both axes so it never balloons on a short-and-wide or narrow-and-tall
      window. */
-  --selected-h: clamp(160px, min(28vh, 50vw), 340px);
+  --selected-h: clamp(320px, min(56vh, 100vw), 680px);
 }
 
 body {
@@ -498,11 +498,8 @@ body[data-render="home"] .hero-video {
    these balloon to nearly the full screen height. */
 .poster-section {
   position: relative;
-  --poster-h: calc(100vw * 9 / 16);
-  --poster-w: calc(var(--poster-h) * 3 / 4);
-}
-.poster-section--selected {
   --poster-h: var(--selected-h);
+  --poster-w: calc(var(--poster-h) * 3 / 4);
 }
 .poster-sticky {
   position: sticky;
@@ -515,6 +512,7 @@ body[data-render="home"] .hero-video {
 .poster-track {
   display: flex;
   align-items: flex-start;
+  justify-content: safe center;
   gap: calc(var(--poster-w) / 96);
   padding-inline: calc(var(--poster-w) / 96);
   will-change: transform;
@@ -576,7 +574,7 @@ body[data-render="home"] .hero-video {
 .work-grid--hero {
   display: flex;
   grid-template-columns: unset;
-  justify-content: flex-start;
+  justify-content: safe center;
   align-items: flex-start;
   overflow-x: auto;
   overflow-y: hidden;

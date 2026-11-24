@@ -164,7 +164,7 @@
       "slug": "termites-du-silence",
       "title": "Les Termites du Silence",
       "year": "",
-      "hero": "assets/projects/termites-du-silence/hero.mp4",
+      "hero": "assets/projects/termites-du-silence/block-0-0.mp4",
       "poster": "assets/projects/termites-du-silence/poster.jpg",
       "pinned": {
         "selectedProjects": true,
@@ -178,7 +178,7 @@
           "media": [
             {
               "type": "video",
-              "src": "assets/projects/termites-du-silence/block-0-0.mp4",
+              "src": "assets/projects/termites-du-silence/hero.mp4",
               "ratio": "4:3"
             }
           ]
@@ -411,7 +411,7 @@
         },
         {
           "mediaCount": 4,
-          "textPosition": "right",
+          "textPosition": "left",
           "text": "Ragdoll\n\nTransitioning the crowd into ragdoll physics.",
           "media": [
             {
@@ -434,7 +434,7 @@
         },
         {
           "mediaCount": 4,
-          "textPosition": "right",
+          "textPosition": "left",
           "text": "Crowd transitions\n\nEarly tests for the cockroaches switching state and reacting to obstacles.",
           "media": [
             {
